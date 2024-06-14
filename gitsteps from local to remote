@@ -1,0 +1,22 @@
+1. go to your project and open cmd
+2. intialize git
+   git init
+3. Add your files to the stagging area
+  git add .
+4. please verify if the files are added to stagging area
+  git status
+5. commit your changes 
+   git commit -m "intial commit"
+6. add the remote repository
+6.1 goto github create a repository and please try to find '+' symbole at top and
+click on new repository
+    please enter the repository field as local project name
+6.2 use below command
+   git remote add origin "url of your remote repo"
+eg:
+git remote add origin https://github.com/anilkumarbanti/jfcSpringBoot.git
+git remote add origin https://github.com/anilkumarbanti/tinderApp.git
+
+7. push your code to gitHub
+git push -u origin master
+    
