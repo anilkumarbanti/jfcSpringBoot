@@ -1,7 +1,9 @@
 package com.jfcSpringBoot.arrayList;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Iterator;
+import java.util.List;
 
 public class ArrayListDemo {
 	//Non Generic
@@ -10,11 +12,14 @@ public class ArrayListDemo {
 		ArrayList arrayList=new ArrayList(); //Non-generice
 		//System.out.println(arrayList.size());
 		
-		arrayList.add("Sachin");
+		arrayList.add("123");
 		arrayList.add("192");
 		arrayList.add("99.23");
+		arrayList.add("23");
+		arrayList.add("99.23");
+		arrayList.add("123");
 		
-		System.out.println(arrayList);// output will be in array object formate
+		
 		
 		//traverse through arrayList
 		
@@ -28,14 +33,23 @@ public class ArrayListDemo {
 		
 		//Iterator
 		
-		System.out.println("=== Iterator ===");
+		/**System.out.println("=== Iterator ===");
 		Iterator itr= arrayList.iterator();
 
 		while(itr.hasNext())
 		{
 		System.out.println(itr.next());
 
-		}
+		}*/
+		
+		//removing duplicate elements from arrayList
+		
+		HashSet hs=new HashSet<>(arrayList);
+		System.out.println(arrayList);// output will be in array object formate
+		System.out.println(hs);
+		
+		List al=new ArrayList<>(hs);
+		System.out.println(al);
 		
 		
 
