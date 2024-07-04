@@ -43,7 +43,6 @@ public class ArrayListDemo {
 		}*/
 		
 		//removing duplicate elements from arrayList
-		
 		HashSet hs=new HashSet<>(arrayList);
 		System.out.println(arrayList);// output will be in array object formate
 		System.out.println(hs);
@@ -51,6 +50,8 @@ public class ArrayListDemo {
 		List al=new ArrayList<>(hs);
 		System.out.println(al);
 		
+		//using stream
+		arrayList.stream().distinct().forEach(System.out::println);
 		
 
 	}
